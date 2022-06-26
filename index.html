@@ -24,6 +24,129 @@
                     </span>
                 </span>
             </h1>
+
+            <!--Aria-hidden hides from screen readers-->
+            <div id="years" aria-hidden="true">
+                <span class="year">2019</span>
+                <span class="year">2020</span>
+                <span class="year">2021</span>
+            </div>
+
+            <!--Will be using css to style these into a single table, but
+            using separate tables will help screen readers understand the 
+             flow -->
+            <div class="table-wrap">
+                <table>
+                    <caption>
+                        Assets
+                    </caption>
+
+                    <!--Used to indicate which portion of the table is the 
+                    header and which contains content, primary data-->
+                    <thead>
+                        <tr>
+                            <td>
+                              <!--This element only exists to ensure the table
+                            has a four-column layout and associate the headers
+                            with correct columns--> 
+                            </td>       
+                            <th>
+                                <span class="sr-only year">
+                                    2020
+                                </span>
+                            </th>
+                            <th>
+                                <span class="sr-only year">
+                                    2021
+                                </span>
+                            </th>
+                            <th>
+                                <span class="sr-only year">
+                                    2022
+                                </span>
+                            </th>
+                     
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr class="data">
+                            <th>
+                                Cash 
+                                <span class="description">
+                                    This is the cash we currently have on hand.
+                                </span>
+                            </th>
+                            <td>
+                                $25
+                            </td>
+                            <td>
+                                $30
+                            </td>
+                            <td class="current">
+                                $28
+                            </td>
+                        </tr>
+
+                        <tr class="data">
+                            <th>Checking 
+                                <span class="description">
+                                    Our primary transactional account.
+                                </span>
+                            </th>
+                            <td>
+                                $54
+                            </td>
+                            <td>
+                                $56
+                            </td>
+                            <td class="current">
+                                $53
+                            </td>
+                            </tr>
+
+
+                            <tr class="data">
+                                <th>
+                                    Savings
+                                    <span class="description">
+                                        Funds set aside for emergencies.
+                                    </span>
+                                </th>
+                                <td>
+                                    $500
+                                </td>
+                                <td>
+                                    $650
+                                </td>
+                                <td class="current">
+                                    $728
+                                </td>
+                            </tr>
+
+
+                            <tr class="total">
+                                <th>
+                                    Total 
+                                    <span class="sr-only">
+                                        Assets
+                                    </span>
+                                </th>
+                                <td>
+                                    $579
+                                </td>
+                                <td>
+                                    $736
+                                </td>
+                                <td>
+                                    $809
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table></table>
+                <table></table>
+              </div>
         </section>
       </main>
   </body>
