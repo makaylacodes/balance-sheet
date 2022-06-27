@@ -1,0 +1,28 @@
+/*Resets the box model*/
+html{
+    box-sizing:border-box;
+  }
+
+  /*Selects any span elements whose class includes sr-only */
+  span[class~="sr-only"]{
+    border:0;
+    clip:rect(1px, 1px, 1px, 1px);
+    /*Clip-path determines the shape the clip property should take. 
+    This forms the clip-path into a rectangle within the element*/
+    clip-path:inset(50%);
+    -webkit-clip-path:inset(50%);
+
+    /*Sizes down the elements*/
+    width:1px;
+    height:1px;
+
+    /*Prevents text content from overflowing*/
+    overflow:hidden;
+    white-space:nowrap;
+
+    /*Takes the hidden elements out of the doc flow. They will no
+    longer be visible or even within the page view*/
+    position:absolute;
+    padding:0;
+    margin:-1px;
+}
