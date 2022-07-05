@@ -1,9 +1,10 @@
 
+
 # Balance Sheet
 
-This is a learning-based project. 
+This is a learning-based project on CSS pseudo selectors. 
 
-To learn pseudo selectors in CSS, I created a balance sheet. I learned how to change the style of an element and trigger other events on the webpage. This project is a part of a responsive web design series by FreeCodeCamp.
+ I learned how to properly change element styles and trigger events on the webpage in CSS by creating a balance sheet. This project is a part of a responsive web design series by FreeCodeCamp.
 
 Visit the live site <a href="https://balance-sheet-css.netlify.app/">HERE</a> to view the hover effect. Simply drag your mouse over the total sections. 
 
